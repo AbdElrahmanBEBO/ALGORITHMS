@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59a3be69-6367-4b97-a0fb-82cfba03b7bb" name="Default Changelist" comment="" />
+    <list default="true" id="59a3be69-6367-4b97-a0fb-82cfba03b7bb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Prim/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Prim/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prim/out/production/Prim/lab_1/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Prim/out/production/Prim/lab_1/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prim/out/production/Prim/lab_1/Prim.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Prim/out/production/Prim/lab_1/Prim.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prim/src/lab_1/Prim.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Prim/src/lab_1/Prim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab_1/kruskal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_1/kruskal.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +88,7 @@
       <recent name="E:\PROJECTS\ALGORITHMS\kruskal\src\lab_1" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.kruskal">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lab_1.Main" />
       <module name="kruskal" />
@@ -92,19 +99,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="kruskal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab_1.kruskal" />
+      <module name="kruskal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.kruskal" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -118,6 +128,9 @@
       <option name="presentableId" value="Default" />
       <updated>1622407856784</updated>
       <workItem from="1622407859466" duration="606000" />
+      <workItem from="1622409687786" duration="1092000" />
+      <workItem from="1622413053553" duration="15000" />
+      <workItem from="1622421899202" duration="904000" />
     </task>
     <servers />
   </component>

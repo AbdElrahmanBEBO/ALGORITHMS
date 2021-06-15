@@ -1,6 +1,5 @@
 package lab_1;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Prim {
@@ -47,31 +46,35 @@ class Graph {
     }
 
     public void prim() {
-        int vnear;
-        int min;
+        int vnear , min;
+        int n = 1;
 
         int[] nearest  = new int[v + 1];
         int[] distance = new int[v + 1];
 
-        for (int i = 2; i <= v - 1; i++) {
+        for (int i = 2; i < v+1 ; i++) {
             nearest[i] = 1;
             distance[i] = W[1][i];
         }
-        for (int j = 1; j <= v - 1; j++) {
-            vnear = v - 1;
-            min = distance[2];
-            for (int i = 2; i <= v; i++) {
-                if (0 <= distance[i] && distance[i] < min) {
+
+        while (n++ < v) {
+            vnear = 5000;
+            min   = 5000;
+
+            for (int i = 2; i < v+1 ; i++) {
+                if (distance[i] > 0 && distance[i] < min) {
                     min = distance[i];
                     vnear = i;
+                    System.out.println(distance[i]+"     "+vnear);
                 }
             }
-
             distance[vnear] = 0;
-            for (int i = 2; i <= v; i++) {
-                if (W[i][vnear] < distance[i]) {
-                    distance[i] = W[i][vnear];
+
+            for (int i = 2; i < v+1 ; i++) {
+                if (W[vnear][i] < distance[i]) {
                     nearest[i] = vnear;
+                    distance[i] = W[vnear][i];
+                    System.out.println(nearest[i]+"&&&&&"+distance[i]);
                 }
             }
         }
@@ -87,3 +90,14 @@ class Graph {
 
     }
 }
+
+/* input test
+5 7
+1 2 1
+1 3 3
+2 3 3
+2 4 6
+3 4 4
+3 5 2
+4 5 5
+*/

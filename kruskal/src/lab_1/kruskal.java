@@ -13,7 +13,9 @@ public class kruskal {
         
         int v = s.nextInt();
         int e = s.nextInt();
+
         Graph g = new Graph(v, e);
+
         int a, b, c;
         while (e-- > 0) {
             a = s.nextInt();
@@ -68,6 +70,7 @@ class Graph {
             int a = edges.get(i).a;
             int b = edges.get(i).b;
             int c = edges.get(i).c;
+
             if (join(a, b)) {
                 System.out.println(a + " " + b + " " + c);
                 sum += c;
@@ -88,7 +91,6 @@ class Edge implements Comparable {
         this.c = c;
     }
     
-    @Override
     public int compareTo(Object o) {
         Edge e = (Edge) o;
         if (this.c > e.c) {
@@ -100,3 +102,15 @@ class Edge implements Comparable {
         return 0;
     }
 }
+
+
+/* input
+5 7
+1 2 1
+1 3 3
+2 3 3
+2 4 6
+3 4 4
+3 5 2
+4 5 5
+*/
